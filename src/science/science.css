@@ -1,0 +1,220 @@
+#science {
+    position: relative;
+
+    width: 100%;
+    height: 800px;
+    background-image: url(../folder/img/science/science_bg.png);
+}
+
+#science .scienceWrap {
+    position: relative;
+
+    width: 1068px;
+    height: 655px;
+    
+    margin: 0 auto;
+}
+
+#science .scienceWrap .scienceLeftWrap{
+    float: left;
+    width: 288px;
+    height: 100%; 
+}
+
+#science .scienceWrap .scienceLeftWrap .gly{
+    width: 230px;
+    height: 192px;
+    background-image: url(../folder/img/science/gly.png); 
+
+    margin: 0 0 130px 55px;
+}
+
+#science .scienceWrap .scienceLeftWrap .leftTitle{
+    width: 287px;
+    height: 46px;
+    background-image: url(../folder/img/science/leftTitle.png);
+}
+
+#science .scienceWrap .scienceLeftWrap p{
+    color: #8e7577;
+    font-size: 18px;
+    line-height: 26px;
+
+    padding-top: 10px;
+}
+
+#science .scienceWrap .scienceCenterWrap{
+    position: relative;
+    float: left;
+    width: 488px;
+    height: 100%;
+}
+
+#science .scienceWrap .scienceCenterWrap .purpleSteam{
+    position: relative;
+
+    width: 241px;
+    height: 216px;
+    background-image: url(../folder/img/science/grape.png);
+
+    left: 50%;
+    margin-left: -120px;
+}
+
+#science .scienceWrap .scienceCenterWrap .funnelBack{
+    position: absolute;
+
+    width: 488px;
+    height: 438px;
+    background-image: url(../folder/img/science/funnelback.png);
+}
+
+#science .scienceWrap .scienceCenterWrap .funnelFront{
+    position: relative;
+
+    width: 485px;
+    height: 390px;
+    background-image: url(../folder/img/science/funnelfront.png);
+
+    margin-top: 40px;
+}
+
+#science .scienceWrap .scienceRightWrap{
+    float: left;
+    width: 292px;
+    height: 100%;
+}
+
+#science .scienceWrap .scienceRightWrap .water{
+    width: 204px;
+    height: 191px;
+    background-image: url(../folder/img/science/water.png); 
+
+    margin-bottom: 130px;
+}
+
+#science .scienceWrap .scienceRightWrap p{
+    color: #8e7577;
+    font-size: 18px;
+    line-height: 26px;
+
+    padding-top: 10px;
+}
+
+#science .scienceWrap .scienceRightWrap .rightTitle{
+    width: 292px;
+    height: 46px;
+    background-image: url(../folder/img/science/rightTitle.png);
+}
+
+/*media*/
+@media (max-width: 767px) {
+    #science{
+        height: 580px;
+        background-image: url(../folder/img/mobile/science/mobile_science_bg.png);
+    }
+    
+    #science .scienceWrap{
+        overflow: hidden;
+        width: 360px;
+        height: auto;
+        top: 180px;
+    }
+
+    #science .scienceWrap .scienceLeftWrap{
+        width: 100px;
+    }
+
+    #science .scienceWrap .scienceLeftWrap .gly{
+        width: 76px;
+        height: 63px;
+        background-image: url(../folder/img/mobile/science/mobile_gly.png);
+
+        margin: 0 0 10px 0;
+    }
+
+    #science .scienceWrap .scienceLeftWrap .leftTitle,
+    #science .scienceWrap .scienceRightWrap .rightTitle{
+        height: 15px;
+    }
+
+    #science .scienceWrap .scienceLeftWrap p,
+    #science .scienceWrap .scienceRightWrap p{
+        display: none;
+    }
+
+    #science .scienceWrap .scienceCenterWrap{
+        width: 160px;
+        height: 222px;
+    }
+
+    #science .scienceWrap .scienceCenterWrap .purpleSteam{
+        width: 80px;
+        height: 71px;
+        background-image: url(../folder/img/mobile/science/mobile_grape.png);
+
+        margin-left: -40px;
+    }
+
+    #science .scienceWrap .scienceCenterWrap .funnelBack{
+        width: 173px;
+        height: 151px;
+        background-image: url(../folder/img/mobile/science/mobile_hopperback.png);
+    }
+
+    #science .scienceWrap .scienceCenterWrap .funnelFront{
+        width: 160px;
+        height: 122px;
+        background-image: url(../folder/img/mobile/science/mobile_hopperfront.png);
+
+        left: 50%;
+        margin: 20px 0 0 -80px;
+    }
+
+    #science .scienceWrap .scienceRightWrap{
+        width: 100px;
+    }
+
+    #science .scienceWrap .scienceRightWrap .water{
+        width: 67px;
+        height: 63px;
+        background-image: url(../folder/img/mobile/science/mobile_water.png);
+        
+        margin-bottom: 10px;
+        margin-left: 32px;
+    }
+
+    #science .scienceWrap .scienceLeftWrap .leftTitle{
+        position: absolute;
+        width: 115px;
+        height: 21px;
+        background-image: url(../folder/img/mobile/science/mobile_leftTitle.png);
+    }
+
+    #science .scienceWrap .scienceRightWrap .rightTitle{
+        position: absolute;
+        width: 120px;
+        height: 21px;
+        background-image: url(../folder/img/mobile/science/mobile_rightTitle.png);
+    }
+}
+
+
+/*애니매이션*/
+#science .scienceWrap .gly{
+    animation: spinGly 1500ms linear infinite alternate;
+}
+
+@keyframes spinGly{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(50deg);}
+}
+
+#science .scienceWrap .water{
+    animation: spinWater 1500ms linear infinite alternate;
+}
+
+@keyframes spinWater{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-50deg);}
+}

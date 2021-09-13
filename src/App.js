@@ -1,10 +1,19 @@
 import React from "react";
+import Intro from "./intro/intro";
+import Farm from "./farm/farm";
+import Forest from "./forest/forest";
+import Science from "./science/science";
+import Night from "./night/night";
 
 const App = () => {
   return (
-    <div className="App">
-      Hello world
-    </div>
+    <>
+      <Intro />
+      <Farm />
+      <Forest />
+      <Science />
+      <Night />
+    </>
   );
 }
 

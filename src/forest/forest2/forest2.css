@@ -1,0 +1,173 @@
+#forest2{
+    width: 100%;
+    height: 750px;
+    background-image: url(../../folder/img/forest/forest2/forest2_bg.png);
+}
+
+#forest2 .frog{
+    position: absolute;
+    width: 153px;
+    height: 257px;
+    background-image: url(../../folder/img/forest/forest2/frog.png);
+
+    margin: 50px 0 0 100px;
+}
+
+#forest2 .machineWrap2{
+    position: relative;
+
+    width: 400px;
+    height: 400px;
+
+    left: 50%;
+    margin-left: -200px;
+    top: 180px;
+}
+
+#forest2 .machineWrap2 .machineBottom{
+    position: absolute;
+
+    width: 374px;
+    height: 162px;
+    background-image: url(../../folder/img/forest/forest2/machinebottom.png);
+
+    margin-top: 220px;
+
+    z-index: 2;
+}
+
+#forest2 .machineWrap2 .machineLeft{
+    position: absolute;
+
+    width: 123px;
+    height: 220px;
+    background-image: url(../../folder/img/forest/forest2/machineleft.png);
+
+    margin-top: 30px;
+    z-index: 2;
+}
+
+#forest2 .machineWrap2 .machineRight{
+    position: absolute;
+
+    width: 123px;
+    height: 248px;
+    background-image: url(../../folder/img/forest/forest2/machineright.png);
+
+    margin: 10px 0 0 260px;
+    z-index: 2;
+}
+
+#forest2 .forestBubble{
+    position: relative;
+
+    float: right;
+    width: 365px;
+    height: 220px;
+    background-image: url(../../folder/img/forest/forest2/forestbubble.png);
+    top: -100px;
+    margin-right: 100px;
+}
+
+#forest2 .forest2Tree{
+    float: left;
+    position: relative;
+
+    width: 304px;
+    height: 282px;
+    background-image: url(../../folder/img/forest/forest2/forest2tree.png);
+
+    top: 50px;
+}
+
+/*forest2 media*/
+@media(max-width: 767px){
+    #forest2{
+        position: relative;
+
+        height: 400px;
+        background-image: url(../../folder/img/mobile/forest/forest2/mobile_forest2_bg.png);
+    }
+    
+    #forest2 .frog{
+        width: 34ps;
+        height: 57px;
+        background-image: url(../../folder/img/mobile/forest/forest2/mobile_frog.png);
+        
+        margin: 0 0 0 20px;
+    }
+
+    #forest2 .machineWrap2{
+        width: 200px;
+        height: 100px;
+
+        top: 70px;
+        margin-left: -97px;
+    }
+
+    #forest2 .machineWrap2 .machineBottom{
+        width: 141px;
+        height: 85px;
+        background-image: url(../../folder/img/mobile/forest/forest2/mobile_machinebottom.png);
+
+        left: 50%;
+        margin: 50px 0 0 -70.5px;
+    }
+
+    #forest2 .machineWrap2 .machineLeft{
+        width: 46px;
+        height: 85px;
+        background-image: url(../../folder/img/mobile/forest/forest2/mobile_machineleft.png);
+        
+        margin: 0 0 0 20px;
+    }
+
+    #forest2 .machineWrap2 .machineRight{
+        width: 46px;
+        height: 93px;
+        background-image: url(../../folder/img/mobile/forest/forest2/mobile_machineright.png);
+        
+        margin: -10px 0 0 130px;
+    }
+
+    #forest2 .forestBubble{
+        position: absolute;
+        width: 161px;
+        height: 97px;
+        background-image: url(../../folder/img/mobile/forest/forest2/mobile_forestbubble.png);
+        top: 290px;
+        left: 50%;
+        margin-left: -83px;
+    }
+
+    #forest2 .forest2Tree{
+        float: right;
+
+        width: 69px;
+        height: 76px;
+        background-image: url(../../folder/img/mobile/forest/forest2/mobile_forest2tree.png);
+        
+        top: 130px;
+        margin-right: 20px;
+    }
+}
+
+/*forest2 애니매이션*/
+
+#forest2 .machineWrap2 .machineLeft{
+    animation: moveLeft 1s linear infinite alternate;
+}
+
+@keyframes moveLeft{
+    from{left: 30px;}
+    to{left:0}
+}
+
+#forest2 .machineWrap2 .machineRight{
+    animation: moveRight 1s linear infinite alternate;
+}
+
+@keyframes moveRight{
+    from{left: -30px;}
+    to{left:0}
+}

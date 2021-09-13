@@ -1,0 +1,109 @@
+#farm1{
+    position: relative;
+
+    width: 100%;
+    height: 800px;
+    background-image: url(../../folder/img/farm/farm1/farm1_bg.png);
+}
+
+#farm1 .leftRice1{
+    position: absolute;
+
+    width: 390px;
+    height: 670px;
+    background-image: url(../../folder/img/farm/farm1/leftrice.png);
+
+    left: 0;
+}
+
+#farm1 .rightRice1{
+    position: absolute;
+
+    width: 335px;
+    height: 570px;
+    background-image: url(../../folder/img/farm/farm1/rightrice.png);
+
+    right: 0;
+    top: 100px;
+}
+
+#farm1 .farmer{
+    position: absolute;
+
+    width: 747px;
+    height: 1078px;
+    background-image: url(../../folder/img/farm/farm1/farmer.png);
+
+    left: 50%;
+    margin-left: -310px;
+}
+
+#farm1 .farmSpeechWrap{
+    position: relative;
+    top: 250px;
+    left: 150px;
+}
+
+#farm1 .farmSpeechWrap .farmTitle{
+    width: 165px;
+    height: 45px;
+    background-image: url(../../folder/img/farm/farm1/farmspeech.png);
+}
+
+#farm1 .farmSpeechWrap .farmSpeech{
+    color: #895c2f;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/*fram 1 media*/
+@media (max-width: 767px){
+    #farm1{
+        height: 450px;
+        background-image: url(../../folder/img/mobile/farm/farm1/mobile_farm1_bg.png);
+    }
+
+    #farm1 .leftRice1{
+        width: 86px;
+        height: 150px;
+        background-image: url(../../folder/img/mobile/farm/farm1/mobile_leftrice.png);
+    }
+    
+    #farm1 .rightRice1{
+        width: 95px;
+        height: 170px;
+        background-image: url(../../folder/img/mobile/farm/farm1/mobile_rightrice.png);
+
+        top: -20px;
+    }
+
+    #farm1 .farmer{
+        width: 160px;
+        height: 250px;
+        background-image: url(../../folder/img/mobile/farm/farm1/mobile_farmer.png);
+
+        margin-left: -69px;
+    }
+
+    #farm1 .farmSpeechWrap{
+        width: 300px;
+
+        text-align: center;
+
+        left: 50%;
+        margin-left: -150px;
+    }
+
+    #farm1 .farmSpeechWrap .farmTitle{
+        width: 79px;
+        height: 22px;
+        background-image: url(../../folder/img/mobile/farm/farm1/mobile_farmspeech.png);
+        left: 50%;
+    }
+
+    #farm1 .farmSpeechWrap .farmSpeech{
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+}

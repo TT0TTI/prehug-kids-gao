@@ -1,0 +1,97 @@
+/*night1*/
+#night1{
+    width: 100%;
+    height: 700px;
+    background-image: url(../folder/img/oneday/night1/night1_bg.png);
+}
+
+#night1 .owl{
+    position: absolute;
+
+    width: 334px;
+    height: 357px;
+    background-image: url(../folder/img/oneday/night1/owl.png);
+
+    margin-top: 50px;
+}
+
+#night1 .starWrap{
+    position: relative;
+
+    width: 750px;
+    height: 400px;
+
+    top: 150px;
+    margin-left: 600px;
+}
+
+#night1 .starWrap .star1,
+#night1 .starWrap .star2,
+#night1 .starWrap .star3{
+    position: absolute;
+    
+    width: 53px;
+    height: 50px;
+    background-image: url(../folder/img/oneday/night1/star1.png);
+}
+
+#night1 .starWrap .star1{
+    margin-top: 350px;
+}
+
+#night1 .starWrap .star2{
+    margin-left: 650px;
+}
+
+#night1 .starWrap .star3{
+    margin: 250px 0 0 500px;
+}
+
+/*night1 media*/
+@media(max-width: 767px){
+    #night1{
+        position: relative;
+        height: 500px;
+        background-image: url(../folder/img/mobile/oneday/night1/mobile_night1_bg.png);
+    }
+
+    #night1 .owl{
+        width: 88px;
+        height: 151px;
+        background-image: url(../folder/img/mobile/oneday/night1/mobile_owl.png);
+        margin-top: 0;
+    }
+
+    #night1 .starWrap{
+        position: absolute;
+
+        width: 308px;
+        height: 157px;
+        background-image: url(../folder/img/mobile/oneday/night1/mobile_star.png);
+        
+        top: 300px;
+        margin-left: 50px;
+    }
+
+    #night1 .starWrap .star1,
+    #night1 .starWrap .star2,
+    #night1 .starWrap .star3{
+        display: none;
+    }
+}
+
+/*night1 애니매이션*/
+#night1 .starWrap .star1,
+#night1 .starWrap .star2,
+#night1 .starWrap .star3{
+    animation: pulseStar 1s linear infinite alternate;
+}
+
+@keyframes pulseStar{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.8);
+    }
+}

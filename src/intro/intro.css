@@ -1,0 +1,243 @@
+#intro{
+    width: 100%;
+    height: 1600px;
+    background-image: url(../folder/img/intro/intro_bg.png);
+}
+
+#intro .introWrap{
+    position: relative;
+    width: 760px;
+    height: 516px;
+    
+    left: 50%;
+    margin-left: -380px;
+
+    top: 100px;
+}
+
+#intro .introWrap .logo{
+    position: absolute;
+
+    width: 760px;
+    height: 516px;
+    background-image: url(../folder/img/intro/logo.png);
+
+    z-index: 1;
+}
+
+#intro .introWrap .lion{
+    position: absolute;
+
+    width: 161px;
+    height: 161px;
+    background-image: url(../folder/img/intro/lion.png);
+
+    margin: 80px 0 0 30px;
+}
+
+#intro .introWrap .lion{
+    position: absolute;
+
+    width: 161px;
+    height: 161px;
+    background-image: url(../folder/img/intro/lion.png);
+
+    margin: 80px 0 0 30px;
+}
+
+#intro .introWrap .rabbit{
+    position: absolute;
+
+    width: 105px;
+    height: 129px;
+    background-image: url(../folder/img/intro/rabbit.png);
+
+    margin: 90px 0 0 580px;
+}
+
+#intro .introWrap .bear{
+    position: absolute;
+
+    width: 112px;
+    height: 105px;
+    background-image: url(../folder/img/intro/bear.png);
+
+    margin: 310px 0 0 560px;
+    z-index: 2;
+}
+
+#intro .introWrap .monkey{
+    position: absolute;
+
+    width: 85px;
+    height: 93px;
+    background-image: url(../folder/img/intro/monkey.png);
+
+    margin: 310px 0 0 50px;
+    z-index: 2;
+}
+
+#intro .cloudWrap{
+    position: relative;
+
+    width: 100%;
+    height: 1050px;
+}
+
+#intro .cloudWrap .leftCloud{
+  
+    position: absolute;
+
+    width: 934px;
+    height: 816px;
+    background-image: url(../folder/img/intro/cloud1.png);
+
+    z-index: 2;
+    left: 0;
+}
+
+#intro .cloudWrap .rightCloud{
+   
+    position: absolute;
+
+    width: 843px;
+    height: 858px;
+    background-image: url(../folder/img/intro/cloud2.png);
+
+    right: 0;
+}
+
+#intro .cloudWrap .dragonfly{
+    position: absolute;
+
+    width: 366px;
+    height: 228px;
+    background-image: url(../folder/img/intro/dragonfly.png);
+
+    top: 800px;
+}
+
+/*애니매이션*/
+
+#intro .introWrap .lion{
+    animation: spinLion 800ms linear infinite alternate;
+}
+
+@keyframes spinLion{
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+#intro .introWrap .lion{
+    animation: spinLion 800ms linear infinite alternate;
+}
+
+@keyframes spinLion{
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+#intro .introWrap .rabbit{
+    animation: spinRabbit 800ms linear infinite alternate;
+}
+
+@keyframes spinRabbit{
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+#intro .introWrap .bear{
+    animation: spinBear 800ms linear infinite alternate;
+}
+
+@keyframes spinBear{
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+#intro .introWrap .monkey{
+    animation: spinMonkey 800ms linear infinite alternate;
+}
+
+@keyframes spinMonkey{
+    from{
+        transform: rotate(20deg);
+    }
+    to{
+        transform: rotate(50deg);
+    }
+}
+
+#intro .cloudWrap .dragonfly{
+    animation: flyDragonfly 7s linear infinite;
+}
+
+@keyframes flyDragonfly{
+    from{
+        left: -360px;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+/*media*/
+@media (max-width: 767px){
+    #intro{
+        height: 1150px;
+        background-image: url(../folder/img/mobile/intro/mobile_intro_bg.png);
+    }
+
+    #intro .introWrap{
+        width: 189px;
+        height: 129px;
+
+        margin-left: -94.5px;
+    }
+
+    #intro .introWrap .logo{
+        width: 189px;
+        height: 129px;
+        background-image: url(../folder/img/mobile/intro/mobile_logo.png);
+    }
+
+    #intro .introWrap .lion,
+    #intro .introWrap .rabbit,
+    #intro .introWrap .bear,
+    #intro .introWrap .monkey,
+    #intro .cloudWrap .dragonfly{
+        display: none;
+    }
+
+    #intro .cloudWrap{
+        height: 350px;
+    }
+
+    #intro .cloudWrap .leftCloud{
+        width: 267px;
+        height: 314px;
+        background-image: url(../folder/img/mobile/intro/mobile_cloud1.png);
+    }
+
+    #intro .cloudWrap .rightCloud{
+        width: 237px;
+        height: 309px;
+        background-image: url(../folder/img/mobile/intro/mobile_cloud2.png);
+    }
+}

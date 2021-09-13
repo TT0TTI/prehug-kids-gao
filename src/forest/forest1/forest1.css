@@ -1,0 +1,116 @@
+#forest1{
+    width: 100%;
+    height: 1050px;
+    background-image: url(../../folder/img/forest/forest1/forest1_bg.png);
+}
+
+#forest1 .leftTree{
+    position: absolute;
+
+    width: 445px;
+    height: 1200px;
+    background-image: url(../../folder/img/forest/forest1/lefttree.png);
+
+    left: 0;
+}
+
+#forest1 .treeWrap{
+    float: right;
+    position: relative;
+
+    width: 304px;
+    height: 572px;
+
+    top: 100px;
+}
+
+#forest1 .treeWrap .rightTree{
+    position: absolute;
+
+    width: 304px;
+    height: 572px;
+    background-image: url(../../folder/img/forest/forest1/righttree.png);
+    z-index: 1;
+}
+
+#forest1 .treeWrap .rabbit1{
+    position: absolute;
+
+    width: 82px;
+    height: 103px;
+    background-image: url(../../folder/img/forest/forest1/rabbit1.png);
+
+    margin: 435px 0 0 107px;
+}
+
+#forest1 .treeWrap .rabbit2{
+    position: absolute;
+
+    width: 56px;
+    height: 75px;
+    background-image: url(../../folder/img/forest/forest1/rabbit2.png);
+
+    margin: 435px 0 0 200px;
+}
+
+/*forest1 media*/
+@media(max-width: 767px){
+    #forest1 {
+        position: relative;
+
+        height: 400px;
+        background-image: url(../../folder/img/mobile/forest/forest1/mobile_forest1_bg.png);
+    }
+
+    #forest1 .leftTree{
+        width: 79px;
+        height: 187px;
+        background-image: url(../../folder/img/mobile/forest/forest1/mobile_lefttree.png);
+    }
+
+    #forest1 .treeWrap{
+        width: 68px;
+        height: 129px;
+
+        top: 200px;
+    }
+
+    #forest1 .treeWrap .rabbit1,
+    #forest1 .treeWrap .rabbit2{
+        display: none;
+    }
+
+    #forest1 .treeWrap .rightTree{
+        width: 68px;
+        height: 129px;
+        background-image: url(../../folder/img/mobile/forest/forest1/mobile_righttree.png);
+    }
+}
+
+/*forest1 애니매이션*/
+
+#forest1 .treeWrap .rabbit1{
+    animation: spinRabbitOne 1000ms linear infinite alternate;
+}
+
+@keyframes spinRabbitOne {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+#forest1 .treeWrap .rabbit2{
+    animation: spinRabbitTwo 1000ms linear infinite alternate;
+}
+
+@keyframes spinRabbitTwo {
+    from{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}

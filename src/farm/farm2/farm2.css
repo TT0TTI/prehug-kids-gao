@@ -1,0 +1,56 @@
+#farm2{
+    position: relative;
+
+    width: 100%;
+    height: 850px;
+    background-image: url(../../folder/img/farm/farm2/farm2_bg.png);
+}
+
+#farm2 .leftRice2{
+    float: left;
+    width: 250px;
+    height: 850px;
+    background-image: url(../../folder/img/farm/farm2/leftrice2.png);
+}
+
+#farm2 .rightRice2{
+    float: right;
+    width: 236px;
+    height: 850px;
+    background-image: url(../../folder/img/farm/farm2/rightrice2.png);
+}
+
+#farm2 .scarecrow{
+    position: absolute;
+
+    width: 103px;
+    height: 206px;
+    background-image: url(../../folder/img/farm/farm2/scarecrow.png);
+
+    margin: 200px 0 0 300px;
+}
+
+/*farm 2 media*/
+
+@media (max-width: 767px){
+    #farm2{
+        height: 440px;
+        background-image: url(../../folder/img/mobile/farm/farm2/mobile_farm2_bg.png);
+    }
+
+    #farm2 .leftRice2{
+        width: 57px;
+        height: 201px;
+        background-image: url(../../folder/img/mobile/farm/farm2/mobile_leftrice2.png);
+    }
+
+    #farm2 .rightRice2{
+        width: 57px;
+        height: 202px;
+        background-image: url(../../folder/img/mobile/farm/farm2/mobile_rightrice2.png);
+    }
+
+    #farm2 .scarecrowz{
+        display: none;
+    }
+}
