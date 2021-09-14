@@ -1,0 +1,72 @@
+#morning{
+    position: relative;
+
+    width: 100%;
+    height: 800px;
+
+    background-image: url(../folder/img/oneday/morning/morning_bg.png);
+}
+
+#morning .sun{
+    width: 131px;
+    height: 131px;
+    background-image: url(../folder/img/oneday/morning/sun.png);
+}
+
+#morning .leftPine{
+    position: absolute;
+
+    width: 231px;
+    height: 329px;
+    background-image: url(../folder/img/oneday/morning/leftpine.png);
+    top: 270px;
+}
+
+#morning .rightPine{
+    position: absolute;
+
+    width: 294px;
+    height: 609px;
+    background-image: url(../folder/img/oneday/morning/rightpine.png);
+
+    right: 0;
+    bottom: 0;
+}
+
+/*morning media*/
+@media(max-width: 767px){
+    #morning {
+        height: 720px;
+        background-image: url(../folder/img/mobile/oneday/morning/mobile_morning_bg.png);
+    }
+
+    #morning .sun{
+        width: 33px;
+        height: 32px;
+        background-image: url(../folder/img/mobile/oneday/morning/mobile_sun.png);
+    }
+
+    #morning .leftPine {
+        width: 48px;
+        height: 81px;
+        background-image: url(../folder/img/mobile/oneday/morning/mobile_leftpine.png);
+    }
+
+    #morning .rightPine {
+        width: 77px;
+        height: 149px;
+        background-image: url(../folder/img/mobile/oneday/morning/mobile_rightpine.png);
+        top: 220px;
+    }
+
+}
+
+/*morning 애니매이션*/
+#morning .sun{
+    animation: moveSun linear 10s infinite;
+}
+
+@keyframes moveSun{
+    from{margin-left: -135px;}
+    to{margin-left: 110%;}
+}

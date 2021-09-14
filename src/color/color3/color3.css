@@ -1,0 +1,82 @@
+#color3{
+    position: relative;
+
+    width: 100%;
+    height: 800px;
+    background-image: url(../../folder/img/color/color3/color3_bg.png);
+}
+
+#color3 .flag{
+    position: relative;
+    width: 1774px;
+    height: 178px;
+    background-image: url(../../folder/img/color/color3/flag.png);
+    left: 50%;
+    margin-left: -887px;
+}
+
+#color3 .book{
+    float: right;
+
+    width: 417px;
+    height: 178px;
+    background-image: url(../../folder/img/color/color3/book.png);
+}
+
+#color3 .logo{
+    position: absolute;
+    width: 759px;
+    height: 516px;
+    background-image: url(../../folder/img/color/color3/logo.png);
+    left: 50%;
+    margin-left: -378.5px;
+}
+
+#color3 .dice{
+    position: absolute;
+    width: 239px;
+    height: 200px;
+    background-image: url(../../folder/img/color/color3/dice.png);
+
+    left: 0;
+    bottom: 0;
+}
+
+/*color3 media*/
+@media(max-width:767px){
+    #color3{
+        height: 430px;
+        background-image: url(../../folder/img/mobile/color/color3/mobile_color3_bg.png);
+    }
+    
+    #color3 .flag{
+        position: relative;
+        width: 320px;
+        height: 46px;
+        background-image: url(../../folder/img/mobile/color/color3/mobile_flag.png);
+        left: 50%;
+        margin-left: -160px;
+    }
+
+    #color3 .book{
+        width: 107px;
+        height: 46px;
+        background-image: url(../../folder/img/mobile/color/color3/mobile_book.png);
+
+        margin-right: 20px;
+    }
+
+    #color3 .logo{
+        width: 225px;
+        height: 153px;
+        background-image: url(../../folder/img/mobile/color/color3/mobile_backlogo.png);
+        margin-top: 100px;
+        margin-left: -112.5px;
+    }
+
+    #color3 .dice{
+        width: 62px;
+        height: 52px;
+        background-image: url(../../folder/img/mobile/color/color3/mobile_dice.png);
+    }
+}

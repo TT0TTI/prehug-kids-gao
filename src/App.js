@@ -1,9 +1,12 @@
 import React from "react";
-import Intro from "./intro/intro";
-import Farm from "./farm/farm";
-import Forest from "./forest/forest";
-import Science from "./science/science";
-import Night from "./night/night";
+import Intro from "./intro";
+import Farm from "./farm";
+import Forest from "./forest";
+import Science from "./science";
+import Night from "./night";
+import Morning from "./morning";
+import Kitchen from "./kitchen";
+import Color from "./color";
 
 const App = () => {
   return (
@@ -13,6 +16,9 @@ const App = () => {
       <Forest />
       <Science />
       <Night />
+      <Morning />
+      <Kitchen />
+      <Color />
     </>
   );
 }

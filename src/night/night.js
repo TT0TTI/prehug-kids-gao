@@ -1,18 +1,12 @@
 import React from "react";
-import "./night.css";
+import Night1 from "./night1";
+import Night2 from "./night2";
 
 const Night = () => {
     return(
         <>
-            <div id="night1">
-                <div className="owl"></div>
-
-                <div className="starWrap">
-                    <div className="star1"></div>
-                    <div className="star2"></div>
-                    <div className="star3"></div>
-                </div>
-            </div>
+            <Night1 />
+            <Night2 />
         </>
     );
 }

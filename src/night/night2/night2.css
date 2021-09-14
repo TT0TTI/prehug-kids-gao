@@ -1,0 +1,73 @@
+#night2 {
+    position: relative;
+
+    width: 100%;
+    height: 800px;
+    background-image: url(../../folder/img/oneday/night2/night2_bg.png);
+}
+
+#night2 .moon{
+    width: 135px;
+    height: 135px;
+    background-image: url(../../folder/img/oneday/night2/moon.png);
+}
+
+#night2 .night2Bubble{
+    position: absolute;
+    width: 365px;
+    height: 220px;
+    background-image: url(../../folder/img/oneday/night2/night2bubble.png);
+    margin: 300px 0 0 80px;
+}
+
+#night2 .rightMoonTree{
+    position: absolute;
+    width: 243px;
+    height: 588px;
+    background-image: url(../../folder/img/oneday/night2/moontree.png);
+
+    right: 0;
+    bottom: 0;
+}
+
+/*night2 media*/
+@media(max-width: 767px){
+    #night2{
+        height: 620px;
+        background-image: url(../../folder/img/mobile/oneday/night2/mobile_night2_bg.png);
+    }
+
+    #night2 .moon{
+        width: 40px;
+        height: 40px;
+
+        background-image: url(../../folder/img/mobile/oneday/night2/mobile_moon.png);
+    }
+
+    #night2 .night2Bubble{
+        width: 127px;
+        height: 77px;
+        background-image: url(../../folder/img/mobile/oneday/night2/mobile_night2bubble.png);
+
+        left: 50%;
+        margin: 300px 0 0 -67px;
+    }
+
+    #night2 .rightMoonTree{
+        width: 70px;
+        height: 173px;
+        background-image: url(../../folder/img/mobile/oneday/night2/mobile_moontree.png);
+        top: 70px;
+        bottom: initial;
+    }
+}
+
+/*night2 애니매이션*/
+#night2 .moon{
+    animation: moveMoon linear 10s infinite;
+}
+
+@keyframes moveMoon {
+    from{margin-left: -130;}
+    to{margin-left: 110%;}
+}

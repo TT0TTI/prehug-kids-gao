@@ -1,0 +1,131 @@
+#kitchen {
+    position: relative;
+
+    width: 100%;
+    height: 800px;
+    background-image: url(../folder/img/kitchen/kitchen_bg.png);
+}
+
+#kitchen .leftPan{
+    float: left;
+
+    width: 253px;
+    height: 384px;
+    background-image: url(../folder/img/kitchen/pan.png);
+}
+
+#kitchen .rightPot{
+    float: right;
+
+    width: 243px;
+    height: 132px;
+    background-image: url(../folder/img/kitchen/pot.png);
+}
+
+#kitchen .steamWrap{
+    position: relative;
+
+    width: 483px;
+    height: 457px;
+
+    left: 50%;
+    margin-left: -275px;
+    top: -100px;
+    
+    clear: both;
+}
+
+#kitchen .steamWrap .steam{
+    position: absolute;
+
+    width: 479px;
+    height: 457px;
+    background-image: url(../folder/img/kitchen/steam.png);
+
+    z-index: 1;
+}
+
+#kitchen .steamWrap .bubble1{
+    position: absolute;
+
+    width: 55px;
+    height: 56px;
+    background-image: url(../folder/img/kitchen/bubble.png);
+
+    margin-top: 230px;
+}
+
+#kitchen .kitchenBubble{
+    position: absolute;
+    width: 365px;
+    height: 220px;
+    background-image: url(../folder/img/kitchen/kitchenbubble.png);
+    top: 400px;
+    right: 0;
+} 
+
+/*kitchen media*/
+@media(max-width: 767px){
+    #kitchen{
+        height: 400px;
+        background-image: url(../folder/img/mobile/kitchen/mobile_kitchen_bg.png);
+    }
+
+    #kitchen .leftPan{
+        width: 52px;
+        height: 78px;
+        background-image: url(../folder/img/mobile/kitchen/mobile_pan.png);
+    }
+
+    #kitchen .rightPot{
+        width: 73px;
+        height: 38px;
+        background-image: url(../folder/img/mobile/kitchen/mobile_pot.png);
+    }
+
+    #kitchen .steamWrap{
+        width: 300px;
+        height: 300px;
+        margin-left: -150px;
+
+        top: 0;
+    }
+
+    #kitchen .steamWrap .steam{
+        width: 222px;
+        height: 184px;
+        background-image: url(../folder/img/mobile/kitchen/mobile_steam.png);
+        left: 50%;
+        top: 100px;
+        margin: 0 0 0 -140px;
+    }
+
+    #kitchen .steamWrap .bubble1{
+        display: none;
+    }
+
+    #kitchen .kitchenBubble{
+        width: 143px;
+        height: 86px;
+        left: 50%;
+        background-image: url(../folder/img/mobile/kitchen/mobile_kitchenbubble.png);
+        margin: -320px 0 0 -70px;
+    }
+}
+
+/* kitchen 애니매이션 */
+
+#kitchen .steamWrap .bubble1 {
+    animation-name: bubble;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 0 0;
+}
+@keyframes bubble {
+  0% {transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  100% {transform:translate(-124px, -170px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}
+  

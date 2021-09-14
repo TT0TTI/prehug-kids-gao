@@ -10,7 +10,7 @@ const Science = () => {
                 <div className="scienceLeftWrap">
                     <div className="gly"></div>
                     <div className="leftTitle"></div>
-                    <p>                
+                    <p className="scienceSpeech">                
                         자초 어성초 감초를 넣어서<br />
                         피부진정 및 항염 효과가 있답니다.
                     </p>
@@ -25,7 +25,7 @@ const Science = () => {
                 <div className="scienceRightWrap">
                     <div className="water"></div>
                     <div className="rightTitle"></div>
-                    <p>
+                    <p className="scienceSpeech">
                         빵의 표면을 촉촉하게 해주는<br/>
                         글리세린과 오메가-9지방산이<br/>
                         풍부한 올리브유를 넣어서<br/>
